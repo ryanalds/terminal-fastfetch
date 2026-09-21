@@ -1,0 +1,57 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "chafa",
+    "source": "/home/ryanalds/Downloads/Pixel_art_Wizard_Portrait.png",
+    "width": 30,
+    "height": 15,
+    "padding": { "top": 1, "right": 3 }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;5;141",
+      "title": "38;5;177",
+      "separator": "38;5;240"
+    },
+    "key": { "width": 16 }
+  },
+  "modules": [
+    "title",
+
+    { "type": "custom", "format": "────────────── Sistema ──────────────", "outputColor": "38;5;240" },
+    { "type": "os",           "key": "\uf30a OS" },
+    { "type": "kernel",       "key": "\uf17c Kernel" },
+    { "type": "uptime",       "key": "\uf017 Uptime" },
+    { "type": "packages",     "key": "\uf487 Pacotes" },
+    { "type": "shell",        "key": "\uf120 Shell" },
+    { "type": "de",           "key": "\uf108 DE" },
+    { "type": "wm",           "key": "\uf2d0 WM" },
+    { "type": "theme",        "key": "\uf1fc Tema" },
+    { "type": "icons",        "key": "\uf03e Ícones" },
+    { "type": "font",         "key": "\uf031 Fonte" },
+    { "type": "cursor",       "key": "\uf245 Cursor" },
+    { "type": "terminal",     "key": "\uf489 Terminal" },
+    { "type": "terminalfont", "key": "\uf121 Fonte Term." },
+
+    { "type": "custom", "format": "───────────── Hardware ──────────────", "outputColor": "38;5;240" },
+    { "type": "host",         "key": "\uf109 Host" },
+    { "type": "cpu",          "key": "\uf2db CPU" },
+    { "type": "gpu",          "key": "\uf1b2 GPU" },
+    { "type": "memory",       "key": "\uf538 Memória" },
+    { "type": "swap",         "key": "\uf0ec Swap" },
+    { "type": "disk",         "key": "\uf0a0 Disco" },
+    { "type": "display",      "key": "\uf26c Tela" },
+    { "type": "battery",      "key": "\uf240 Bateria" },
+    { "type": "poweradapter", "key": "\uf1e6 Energia" },
+
+    { "type": "custom", "format": "──────────────── Rede ────────────────", "outputColor": "38;5;240" },
+    { "type": "localip",      "key": "\uf1eb IP Local" },
+    { "type": "locale",       "key": "\uf0ac Locale" },
+
+    { "type": "custom", "format": "─────────────────────────────────────", "outputColor": "38;5;240" },
+    "break",
+    { "type": "colors", "symbol": "circle", "paddingLeft": 2 },
+    "break"
+  ]
+}
