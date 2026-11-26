@@ -1,18 +1,20 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "type": "chafa",
-    "source": "/home/ryanalds/Downloads/Pixel_art_Wizard_Portrait.png",
-    "width": 30,
-    "height": 15,
-    "padding": { "top": 1, "right": 3 }
+    "type": "kitty-direct",
+    "source": "/home/ryanalds/Imagens/terminal/heisenberg-pixelart-flat.png",
+    "position": "left",
+    "width": 42,
+    "height": 21,
+    "padding": { "top": 0, "right": 3 }
   },
   "display": {
     "separator": "  ",
     "color": {
-      "keys": "38;5;141",
-      "title": "38;5;177",
-      "separator": "38;5;240"
+      "keys": "38;5;220",
+      "title": "38;5;37",
+      "output": "38;5;109",
+      "separator": "38;5;166"
     },
     "key": { "width": 16 }
   },
@@ -25,33 +27,28 @@
     { "type": "uptime",       "key": "\uf017 Uptime" },
     { "type": "packages",     "key": "\uf487 Pacotes" },
     { "type": "shell",        "key": "\uf120 Shell" },
-    { "type": "de",           "key": "\uf108 DE" },
-    { "type": "wm",           "key": "\uf2d0 WM" },
-    { "type": "theme",        "key": "\uf1fc Tema" },
-    { "type": "icons",        "key": "\uf03e Ícones" },
-    { "type": "font",         "key": "\uf031 Fonte" },
-    { "type": "cursor",       "key": "\uf245 Cursor" },
-    { "type": "terminal",     "key": "\uf489 Terminal" },
-    { "type": "terminalfont", "key": "\uf121 Fonte Term." },
 
     { "type": "custom", "format": "───────────── Hardware ──────────────", "outputColor": "38;5;240" },
-    { "type": "host",         "key": "\uf109 Host" },
-    { "type": "cpu",          "key": "\uf2db CPU" },
-    { "type": "gpu",          "key": "\uf1b2 GPU" },
-    { "type": "memory",       "key": "\uf538 Memória" },
-    { "type": "swap",         "key": "\uf0ec Swap" },
-    { "type": "disk",         "key": "\uf0a0 Disco" },
-    { "type": "display",      "key": "\uf26c Tela" },
-    { "type": "battery",      "key": "\uf240 Bateria" },
-    { "type": "poweradapter", "key": "\uf1e6 Energia" },
+    { "type": "host",         "key": "\uf109 Host",     "outputColor": "38;5;81" },
+    { "type": "cpu",          "key": "\uf2db CPU",      "format": "{name} ({core-types})", "outputColor": "38;5;81" },
+    { "type": "gpu",          "key": "\uf1b2 GPU",      "outputColor": "38;5;81" },
+    { "type": "memory",       "key": "\uf538 Memória",  "outputColor": "38;5;81" },
+    { "type": "swap",         "key": "\uf0ec Swap",     "outputColor": "38;5;81" },
+    { "type": "disk",         "key": "\uf0a0 Disco",    "outputColor": "38;5;81" },
+    { "type": "display",      "key": "\uf26c Tela",     "outputColor": "38;5;81" },
+    { "type": "battery",      "key": "\uf240 Bateria",  "outputColor": "38;5;81" },
+    { "type": "poweradapter", "key": "\uf1e6 Energia",  "outputColor": "38;5;81" },
 
     { "type": "custom", "format": "──────────────── Rede ────────────────", "outputColor": "38;5;240" },
-    { "type": "localip",      "key": "\uf1eb IP Local" },
-    { "type": "locale",       "key": "\uf0ac Locale" },
+    { "type": "localip",      "key": "\uf1eb IP Local", "outputColor": "38;5;114" },
+    { "type": "locale",       "key": "\uf0ac Locale",   "outputColor": "38;5;114" },
 
     { "type": "custom", "format": "─────────────────────────────────────", "outputColor": "38;5;240" },
     "break",
-    { "type": "colors", "symbol": "circle", "paddingLeft": 2 },
+    {
+      "type": "custom",
+      "format": "{#38;5;109}⚗{#}  {#38;5;37}⚗{#}  {#38;5;114}⚗{#}  {#38;5;148}⚗{#}  {#38;5;220}⚗{#}  {#38;5;166}⚗{#}  {#38;5;160}⚗{#}  {#38;5;141}⚗{#}"
+    },
     "break"
   ]
 }
